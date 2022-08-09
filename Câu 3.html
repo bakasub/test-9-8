@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Câu 3</title>
+</head>
+<body>
+<!-- b1 tạo 2 ô input có id-->
+<input type="number" id="input1"><input id="input2">
+<!--b2 tạo nút để tính tích với thuộc tính onclick và id-->
+<button type="button" onclick="calc()" id="calc">Tính toán</button>
+<!--b3 tạo thẻ h1 với id để in ra kết quả-->
+<h1 id="result"></h1>
+<script>
+  //b4 tạo chức năng tính toán phép nhân với biến là a và b, sau đó in kết quả ra id của thẻ h1
+  function calc(){
+  let a = document.getElementById('input1').value
+  let b = document.getElementById('input2').value
+  document.getElementById('result').innerHTML = 'S = ' + (a*b)
+  }
+</script>
+</body>
+</html>

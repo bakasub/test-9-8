@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Câu 4a</title>
+</head>
+<body>
+<!--b1 tạo hộp input-->
+<input type="number" id="numinput">
+<!--b2 tạo nút tính toán-->
+<button type="button" onclick="cal()">Tính toán</button>
+<!--b3 tạo text hiển thị kết quả-->
+<p id="result2"></p>
+<script>
+  //b4 tạo chức năng tính toán cho nút với biến nhận từ hộp input và hiển thị kết quả tới text
+  function cal(){
+  let b = document.getElementById('numinput').value
+  document.getElementById('result2').innerHTML = ('Chu vi của hình vuông là ' +(b*4) + ' và diện tích là ' +(b*b) )
+  }
+</script>
+</body>
+</html>

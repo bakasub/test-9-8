@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Câu 4b</title>
+</head>
+<body>
+<!--b1 tạo 2 hộp input-->
+<input type="number" id="numinput1">
+<input type="number" id="numinput2">
+<!--b2 tạo nút tính toán-->
+<button type="button" onclick="cal1()">Tính toán</button>
+<!--b3 tạo text hiển thị kết quả-->
+<p id="result3"></p>
+<script>
+  //b4 tạo chức năng tính toán cho nút với biến nhận từ hộp input và hiển thị kết quả tới text
+  function cal1(){
+    let c = document.getElementById('numinput1').value
+    let d = document.getElementById('numinput2').value
+    document.getElementById('result3').innerHTML = ('Bình phương của a là ' +(c*c))
+  }
+</script>
+
+
+</body>
+</html>
